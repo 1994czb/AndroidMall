@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidmall.view.activity.MainActivity">
+
+    <com.androidmall.model.myview.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/selecter_nav_home"
+            android:textColor="@drawable/selecter_textcolor"
+            android:checked="true"
+            android:text="首页"
+            android:id="@+id/rbhome"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rbclass"
+            android:drawableTop="@drawable/selecter_nav_class"
+            android:textColor="@drawable/selecter_textcolor"
+            android:text="分类" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rbcart"
+            android:drawableTop="@drawable/selecter_nav_cart"
+            android:textColor="@drawable/selecter_textcolor"
+            android:text="购物车" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rbuser"
+            android:drawableTop="@drawable/selecter_nav_user"
+            android:textColor="@drawable/selecter_textcolor"
+            android:text="个人" />
+
+    </RadioGroup>
+
+</LinearLayout>

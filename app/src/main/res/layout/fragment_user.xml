@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/userRelativeLayout"
+        android:background="#f00">
+
+        <ImageView
+            android:id="@+id/headImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/ic_default_user_head"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTextView"
+            android:text="点击登录"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/headImageView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#cc00"
+            android:layout_below="@+id/usernameTextView">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="商品收藏"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/collectionGoodsTextView"
+                android:drawableTop="@mipmap/ic_collection_goods"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="店铺收藏"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/collectionStoreTextView"
+                android:drawableTop="@mipmap/ic_collection_store"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="我的足迹"
+                android:padding="5dp"
+                android:id="@+id/myFootprintTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_user_footprint"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/ic_user_order"
+        android:drawableRight="@mipmap/ic_normal_dot_left"
+        android:text="   全部订单"
+        android:id="@+id/allOrder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="未付款"
+            android:id="@+id/Unpaid"
+            android:drawableTop="@mipmap/ic_user_order_wait_pay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="待发货"
+            android:id="@+id/to_be_delivered"
+            android:drawableTop="@mipmap/ic_user_order_wait_drive"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="待收货"
+            android:id="@+id/to_be_received"
+            android:drawableTop="@mipmap/ic_user_order_wait_receipt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="待评价"
+            android:id="@+id/be_evaluated"
+            android:drawableTop="@mipmap/ic_user_order_wait_comment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="退款/货"
+            android:id="@+id/refunds"
+            android:drawableTop="@mipmap/ic_user_order_wait_refund"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/ic_user_property"
+        android:text="   我的财产"
+        android:layout_marginRight="5dp"
+        android:drawableRight="@mipmap/ic_normal_dot_left"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="预存款"
+            android:drawableTop="@mipmap/ic_user_property_money"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="充值卡"
+            android:drawableTop="@mipmap/ic_user_property_card"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="代金券"
+            android:drawableTop="@mipmap/ic_user_property_vouchers"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="红包"
+            android:drawableTop="@mipmap/ic_user_property_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="积分"
+            android:drawableTop="@mipmap/ic_user_property_integral"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="   收货地址"
+        android:id="@+id/shipping_address"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@mipmap/ic_user_address"
+        android:drawableRight="@mipmap/ic_normal_dot_left"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="   系统设置"
+        android:id="@+id/system_settings"
+        android:drawableLeft="@mipmap/ic_user_setting"
+        android:drawableRight="@mipmap/ic_normal_dot_left"/>
+
+</LinearLayout>

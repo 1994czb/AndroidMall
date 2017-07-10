@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ff5001"
+        android:text="  用户登录"
+        android:textSize="30dp"
+        android:drawableLeft="@mipmap/ic_action_back"
+        android:id="@+id/textView_login_back"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@mipmap/ic_edit_username"
+        android:hint="  请输入账号"
+        android:id="@+id/editView_login_username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@mipmap/ic_edit_password"
+        android:hint="  请输入密码"
+        android:id="@+id/editView_login_password" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ff5001"
+        android:text="登录"
+        android:id="@+id/button_login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注册账号"
+            android:textColor="#ff5001"
+            android:textSize="20dp"
+            android:id="@+id/registeredTextview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="找回密码"
+            android:textColor="#ff5001"
+            android:textSize="20dp"
+            android:id="@+id/tv_findpassword"/>
+    </LinearLayout>
+</LinearLayout>

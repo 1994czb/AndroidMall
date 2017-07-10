@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="确认您的选择" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="退出程序?" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmTextView"
+        android:layout_below="@+id/contentTextView"
+        android:text="确定"
+        android:padding="8dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#f00"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelTextView"
+        android:layout_below="@+id/contentTextView"
+        android:layout_toLeftOf="@+id/confirmTextView"
+        android:text="取消"
+        android:padding="8dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#f00"/>
+
+</RelativeLayout>
